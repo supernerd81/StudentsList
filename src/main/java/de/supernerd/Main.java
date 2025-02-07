@@ -8,7 +8,7 @@ public class Main {
 
         Student student1 = new Student("Hans", "Meyer", 333);
         Student student2 = new Student("Felix", "Müller", 5564);
-        Student student3 = new Student("Helena", "Plath", 4456);
+        Student student3 = new Student("Moritz", "Kussauer", 4456);
 
         students.add(student1);
         students.add(student2);
