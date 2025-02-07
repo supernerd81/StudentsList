@@ -37,5 +37,26 @@ public class Main {
        // school.deleteStudent("Hans", "Meyer");
 
         System.out.println(school);
+
+        Medication medication1 = new Medication("medi1", 22.5, 455);
+        Medication medication2 = new Medication("medi2", 45.0, 345);
+        Medication medication3 = new Medication("medi3", 44.5, 65);
+        Medication medication4 = new Medication("medi4", 78.0, 1522);
+
+        Pharmacy pharmacy = new Pharmacy();
+        pharmacy.save(medication1);
+        pharmacy.save(medication2);
+        pharmacy.save(medication3);
+        pharmacy.save(medication4);
+
+        System.out.println("Medikamente vorhanden: " + pharmacy.getCount());
+
+        System.out.println(pharmacy.find("medi3"));
+
+        pharmacy.printAllMedis();
+
+        pharmacy.delete("medi2");
+
+        pharmacy.printAllMedis();
     }
 }
