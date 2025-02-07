@@ -13,5 +13,10 @@ public class Main {
         students.add(student1);
         students.add(student2);
         students.add(student3);
+
+        School school = new School();
+        school.addStudent(student1);
+        school.addStudent(student2);
+        school.addStudent(student3);
     }
 }
